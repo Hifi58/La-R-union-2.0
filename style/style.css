@@ -119,12 +119,20 @@ span a{
 
 #sea-section{
     display: none;
+    min-height: 100vh;
+    background: url(./images/sea.jpg);
+    background-size: cover;
+    display: none;
 }
 
 /*** Section oiseaux ***/
 
 #birds-section{
     display: none;
+    min-height: 100vh;
+    background: url(./images/bird.jpg);
+    background-size: cover;
+
 }
 
 /*** Section nourriture ***/
