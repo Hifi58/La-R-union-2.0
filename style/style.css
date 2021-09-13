@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
 
+/*****************************
+Sommaire
+
+1) Paramètres ligne 17
+2) Main
+3) Section Baleines
+4) Section Paysages
+5) Section océan
+6) Section oiseaux
+7) Section nourriture
+8) Section cultures
+
+*****************************/
+
+/*** Paramètres ***/
+
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +25,8 @@
 body{
     min-height: 100vh;
 }
+
+/*** Main ***/
 
 #main{
     min-height: 100vh;
@@ -52,8 +70,8 @@ body{
 }
 
 .dot span{
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     background-color: white;
     border-radius: 50%;
     margin: 3rem;
@@ -61,10 +79,23 @@ body{
     cursor: pointer;
 }
 
+span{
+    display: flex;
+    justify-content: center;
+}
+
+span a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
 .dot span:hover{
     transition: 750ms;
    transform: scale(1.5);
 }
+
+/*** Section Baleines ***/
 
 #whale-section{
     min-height: 100vh;
@@ -74,4 +105,36 @@ body{
 
 .content{
     width: 320px;
+}
+
+/*** Section Paysages ***/
+
+#landscape-section{
+    min-height: 100vh;
+    background: url(./images/landscape.jpg);
+    display: none;
+}
+
+/*** Section océan ***/
+
+#sea-section{
+    display: none;
+}
+
+/*** Section oiseaux ***/
+
+#birds-section{
+    display: none;
+}
+
+/*** Section nourriture ***/
+
+#food-section{
+    display: none;
+}
+
+/*** Section cultures ***/
+
+#culture-section{
+    display: none;
 }
