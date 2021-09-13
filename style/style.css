@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+
+#main{
+    min-height: 100vh;
+    background: url(./images/island.jpg);
+}
+
+.island h1{
+    text-transform: uppercase;
+    font-family: 'Finger Paint', cursive;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 1.5rem;
+    letter-spacing: 5px;
+    color: white;
+    font-size: 3.5rem;
+    animation: fade 10s;
+}
+
+@keyframes fade {
+
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+.dot{
+    min-height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dot div{
+    display: flex;
+    flex-direction: column;
+}
+
+.dot span{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 3rem;
+    margin-top: 8rem;
+    cursor: pointer;
+}
+
+.dot span:hover{
+    transition: 750ms;
+   transform: scale(1.5);
+}
+
+#whale-section{
+    min-height: 100vh;
+    background: url(./images/baleine.jpg);
+    display: none;
+}
+
+.content{
+    width: 320px;
+}
