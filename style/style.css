@@ -263,6 +263,13 @@ b{
     left: 0;
   }
 
+  .containeranimals{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-block: 2rem;
+  }
+
 /*** Section nourriture ***/
 
 
