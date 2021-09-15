@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*****************************
+Sommaire
+
+1) Paramètres ligne 17
+2) Main
+3) Section Paysages
+4) Section animaux
+5) Section nourriture
+6) Section lieux
+
+*****************************/
+
+/*** Paramètres ***/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*** Main ***/
+
+.containerindex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0.rem;
+}
+
+.button2 {
+    position: absolute;
+    width: 700px;
+    left:0;
+    top: 230px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+  }
+  
+  .button2 a {
+    width: 200px;
+    padding: 12px 48px;
+    text-align: center;
+    color: white;
+    border: solid 2px white;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .container2:hover .button2 {
+    opacity: 1;
+  }
+
+  .container2 {
+    position: relative;
+    width: 700px;
+    height: 400px;
+    margin: 1rem;
+  }
+  
+  .overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+    box-shadow: 0px 4px 9px 0px #00000059;
+    border-radius: 5px;
+  }
+  
+  .container2:hover .overlay2 {
+    display: block;
+    background: rgba(0, 0, 0, .3);
+  }
+  
+  .container2 img {
+    position: absolute;
+    width: 700px;
+    height: 400px;
+    left: 0;
+  }
+  
+  .title2 {
+    position: absolute;
+    letter-spacing: 5px;
+    width: 700px;
+    left: 0;
+    top: 120px;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    z-index: 1;
+    transition: top .5s ease;
+    text-shadow: 5px 5px 20px rgb(144, 144, 144);
+  }
+  
+  .container2:hover .title {
+    top: 90px;
+  }
+
+/*** Section Paysages ***/
+
+.return{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding-block: 2rem;
+    box-shadow: 0px 5px 20px rgb(144, 144, 144);
+    width: 100%;
+}
+
+.return a{
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+    margin-left: 9rem;
+}
+
+.return h1{
+    margin-right: 7rem;
+    letter-spacing: 0.3rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+b{
+    color: rgb(233, 162, 81);
+}
+
+.home{
+    width: 30px;
+}
+
+.containerall{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+    
+}
+
+.container {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    margin: 2rem;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+    box-shadow: 0px 4px 9px 0px #00000059;
+    border-radius: 5px;
+  }
+  
+  .container:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, .3);
+  }
+  
+  .container img {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    left: 0;
+  }
+  
+  .title {
+    position: absolute;
+    letter-spacing: 5px;
+    width: 500px;
+    left: 0;
+    top: 120px;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    z-index: 1;
+    transition: top .5s ease;
+    text-shadow: 5px 5px 20px rgb(144, 144, 144);
+  }
+  
+  .container:hover .title {
+    top: 90px;
+  }
+  
+  .container:hover .button {
+    opacity: 1;
+  }
+
+
+/*** Section animaux ***/
+
+.container3 {
+    position: relative;
+    width: 500px;
+    height: 300px;
+  }
+
+  .container3:hover .title {
+    top: 90px;
+  }
+  
+  .container3:hover .button {
+    opacity: 1;
+  }
+
+  .container3:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, .3);
+  }
+  
+  .container3 img {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    left: 0;
+  }
+
+  .containeranimals{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-block: 2rem;
+  }
+
+/*** Section nourriture ***/
+
+.recipes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.card{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 9px 0px #00000059;
+  margin: 1rem;
+}
+
+.card-content{
+  display: flex;
+  flex-direction: column;
+  border-inline: 1px solid rgb(233, 162, 81);
+  border-bottom: 5px solid rgb(233, 162, 81);
+}
+
+.card h3{
+  margin: 1rem;
+  text-transform: uppercase;
+}
+
+.card p{
+  margin: 1rem;
+  line-height: 2rem;
+  text-align: justify;
+}
+
+.card-image{
+  width: 500px;
+  height: 312.5px;
+}
+
+.findrecipes{
+  display: flex;
+  justify-content: center;
+}
+
+.card button{
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgb(32, 31, 31);
+  border-radius: 3px;
+}
+
+.card a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(32, 31, 31);
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+
+/*** Section lieux ***/
+
+.places{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.card-places{
+  display: flex;
+  width: 1000px;
+  height: 333.33px;
+  box-shadow: 0px 4px 9px 0px #00000059;
+  margin-bottom: 1.5rem;
+}
+
+.card-places img{
+  width: 500px;
+}
+
+.content-places{
+  border-block: 1px solid rgb(233, 162, 81);
+  border-right: 5px solid rgb(233, 162, 81);
+}
+
+.content-places h3{
+  margin-inline: 1.5rem;
+  margin-block: 1rem;
+  
+}
+
+.content-places p{
+  margin-left: 1rem;
+  margin-top: 5rem;
+  line-height: 1.5rem;
+}
+
+/*** Reponsive ***/
+@media all and (max-width: 1000px ){
+  .card-places{
+    width: 100%;
+  }
+}
+@media all and (max-width: 759px ){
+  .return{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .return h1,
+  .return a{
+    margin: 0;
+  }
+
+  .container2{
+    width: 100%;
+    height: 250px;
+  }
+
+  .container2 img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .title2{
+    width: 100%;
+    top: 100px;
+  }
+
+  .overlay2{
+    display: none;
+  }
+
+  .button2{
+    width: 100%;
+    top: 195px;
+  }
+
+  .card-places img{
+    width: 400px;
+  }
+  
+}
+
+@media all and (max-width: 600px ){
+    .card-places{
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+    }
+
+    .card-places img{
+      width: 100%;
+    }
+
+    .content-places{
+      flex-direction: column;
+      border: none;
+      border-bottom: 4px solid rgb(233, 162, 81);
+      
+    }
+
+    .overlay{
+      display: none;
+    }
+    .content-places p{
+      margin: 1.5rem;
+    }
+}
+
+@media all and (max-width: 500px ){
+    .card{
+      width: 100%;
+    }
+
+    .card img{
+      width: 100%;
+      height: 100%;
+    }
+
+    .container{
+      width: 100%;
+      height: 250px;
+      margin: 0;
+    }
+
+    .container img{
+      width: 100%;
+      height: 100%;
+    }
+
+    .title{
+      width: 100%;
+    }
+
+    .overlay{
+      display: none;
+    }
+
+    .container3{
+      width: 100%;
+    }
+
+    .container3 img{
+      width: 100%;
+      height: 100%;
+    }
+}
+
+@media all and (max-width: 375px ){
+  .h1-places{
+    font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 295px ){
+    header h1{
+      font-size: 1.5em;
+    }
+}
+
+/*** scrool bar ***/
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(233, 162, 81);
+  border: 31px none #cfc7d4;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(200, 126, 42);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: rgb(170, 101, 22);
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #f2f2f2;
+}
+
+::-webkit-scrollbar-track:active {
+  background: #f5f5f5;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
